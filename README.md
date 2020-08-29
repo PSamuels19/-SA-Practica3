@@ -22,3 +22,7 @@ Este servicio actua como un cliente y un servidor, corre sobre el puerto 6000.
 
 ## Funciones del servicio de Repartidores
 Este servicio actua como un servidor, corre sobre el puerto 7000.
+
+## Link Video de YouTube
+https://youtu.be/sL5TqFNYPgM
+
