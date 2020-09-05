@@ -11,18 +11,68 @@ Con las siguientes acciones:
   2. Recepción de órdenes en el restaurante.
   3. Servicio de entrega por el repartidor.
   
-## Funciones del Cliente
-El servidor del cliente corre sobre el puerto 5000.
+# Servicios
+---
+## ESB
+Se cuenta con un ESB que sirve como orquestador de servicios, dicho orquestador corre en el puerto 9000, el cual sirve para administrar la logica de comunicacion con todos los servicios.
 
+## Funciones del Cliente
+El servidor del cliente corre sobre el puerto 3000.
+### Listar platillos
+Muestra la lista de platillos que consume del servicio del restaurante, para visualizarlos basta con colocar en el navegador la siguiente ruta:
+``
+http://localhost:3000
+``
 ### Hacer pedido
 Realiza una peticion post con la informacion necesaria para realizar una peticion al servicio del Restaurante.
 
+
 ## Funciones del Restaurante
-Este servicio actua como un cliente y un servidor, corre sobre el puerto 6000.
+Este servicio actua como un cliente y un servidor, corre sobre el puerto 5000.
+### Listar platillos
+Muestra la lista de platillos, para visualizarlos basta con colocar en el navegador la siguiente ruta:
+``
+http://localhost:5000
+``
+### Api listar platillos
+Devuelve un json con la lista de platillos que tiene el restaurante
+``
+http://localhost:5000/platillos_json
+``
+### Api hacer pedido
+Aqui es donde se realiza la accion de hacer el pedido de los platillos, recibe el platillo que sera pedido y realiza una peticion al servidor de repartidores para obtener un repartidor y devolver la informacion del pedido realizado.
+Para consumir la api que realiza el pedido de debe de usar la siguiente ruta
+``
+http://localhost:5000/pedido
+``
+
 
 ## Funciones del servicio de Repartidores
-Este servicio actua como un servidor, corre sobre el puerto 7000.
+Este servicio actua como un servidor, corre sobre el puerto 4000.
+### Listar repartidores disponibles
+Muestra la lista de repartidores disponibles, para visualizarlos basta con colocar en el navegador la siguiente ruta:
+``
+http://localhost:4000
+``
+### Api listar platillos
+Devuelve un json con la lista de repartidores disponibles que tiene el servidor.
+``
+http://localhost:4000/repartidor_json
+``
 
-## Link Video de YouTube
-https://youtu.be/sL5TqFNYPgM
+
+# Como usar la aplicacion
+---
+### Run
+
+- Abrir una terminal para cada servicio.   
+- Ubicarse dentro de cada uno de los servicios y ejecutar las  siguientes lineas de codigo
+```sh
+$ cd -SA-Practica4
+$ cd Cliente
+$ npm start
+```
+- Abrir el navegador del cliente en la siguiente ruta 
+``
+http://localhost:3000
 
