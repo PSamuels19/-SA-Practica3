@@ -29,11 +29,11 @@ Netlify lo utilizamos para automatizar el despliegue de sitios, en este caso par
 
 ## Pasos Configurando netlify
 - Primero vinculamos netlify al repositorio de github.
-![Vinculando netlify](Imagenes/VinculandoNetlify)
+![Vinculando netlify](Imagenes/VinculandoNetlify.PNG)
 - Despues entramos al area de configuracion
-![Entrando configuracion](Imagenes/EntrandoConfiguracion)
+![Entrando configuracion](Imagenes/EntrandoConfiguracion.PNG)
 - Configuramos netlify
-![Configurando netlify](Imagenes/ConfigurandoNetlify)
+![Configurando netlify](Imagenes/ConfigurandoNetlify.PNG)
 
 # Servicios
 ---
