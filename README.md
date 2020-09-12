@@ -1,7 +1,7 @@
-# -SA-Practica3
-Práctica # 3: Coreografía de Servicios
+# -SA-Practica5
+Práctica #5: Coreografía de Servicios
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) [![Netlify Status](https://api.netlify.com/api/v1/badges/b678cdf9-7485-4647-bf07-0a0d4faeaf82/deploy-status)](https://app.netlify.com/sites/youthful-leakey-5d4133/deploys)
 
 La Practica3_SA esta compuesta por 3 programas(servicios), un cliente, un restaurante y un servidor de repartidores; con el objetivo de simular un servicio de crowdsourcing de comida a domicilio.
 
@@ -10,7 +10,28 @@ Con las siguientes acciones:
   1. Solicitud de comida por parte del cliente.
   2. Recepción de órdenes en el restaurante.
   3. Servicio de entrega por el repartidor.
-  
+
+# Constructor de artefactos
+- **Gulp**
+Gulp es el artefacto que se utilizó para empaquetar los servicios.
+Para utilizarlo se necesita crear un archivo con el nombre ***gulpfile.js***, e instalar gulp y gulp-zip.
+
+Run artefacto:
+```
+gulp Nombre_tarea
+example:
+gulp zip_cliente
+```
+
+#Despliegue de artefactos con
+- **Netlify**
+Netlify lo utilizamos para automatizar el despliegue de sitios, en este caso para desplegar los artefactos creados con gulp.
+
+## Pasos Configurando netlify
+- Primero vinculamos netlify al repositorio de github.
+- Despues entramos al area de configuracion.
+- Por ultimo configuramos netlify.
+
 # Servicios
 ---
 ## ESB
@@ -75,4 +96,3 @@ $ npm start
 - Abrir el navegador del cliente en la siguiente ruta 
 ``
 http://localhost:3000
-
